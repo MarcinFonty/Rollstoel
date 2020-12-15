@@ -26,6 +26,7 @@ namespace SelecteerBestuurder
         private async void HandmatigeBestuurder_KeyDown(object sender, KeyEventArgs e)
         {
             HandmatigeBestuurderKeyDown keyDown = new HandmatigeBestuurderKeyDown();
+            TestHandmatigeBestuurderKeyDown testKeyDown = new TestHandmatigeBestuurderKeyDown();
 
             if (IsKeyDown)
             {
@@ -33,7 +34,14 @@ namespace SelecteerBestuurder
             }
             IsKeyDown = true;
 
-            keyDown.stuurSignaal(e, IP);
+            if (cbRealCar.Checked)
+            {
+                keyDown.stuurSignaal(e, IP);
+            }
+            else
+            {
+                testKeyDown.stuurSignaal(e, IP);
+            }
         }
 
         /// <summary>
@@ -44,10 +52,18 @@ namespace SelecteerBestuurder
         private async void HandmatigeBestuurder_KeyUp(object sender, KeyEventArgs e)
         {
             HandmatigeBestuurderKeyUp keyUp = new HandmatigeBestuurderKeyUp();
-
+            TestHandmatigeBestuurderKeyUp testKeyUp = new TestHandmatigeBestuurderKeyUp();
+           
             IsKeyDown = false;
 
-            keyUp.stuurGeenSignaal(e, IP);
+            if (cbRealCar.Checked) 
+            {
+                keyUp.stuurGeenSignaal(e, IP);
+            }
+            else
+            {
+                testKeyUp.stuurGeenSignaal(e, IP); 
+            }
         }
 
         /// <summary>
