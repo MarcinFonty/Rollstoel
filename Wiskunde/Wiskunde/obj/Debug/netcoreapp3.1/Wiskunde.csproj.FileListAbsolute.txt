@@ -1,0 +1,13 @@
+C:\Users\marci\source\repos\Wiskunde\Wiskunde\bin\Debug\netcoreapp3.1\Wiskunde.exe
+C:\Users\marci\source\repos\Wiskunde\Wiskunde\bin\Debug\netcoreapp3.1\Wiskunde.deps.json
+C:\Users\marci\source\repos\Wiskunde\Wiskunde\bin\Debug\netcoreapp3.1\Wiskunde.runtimeconfig.json
+C:\Users\marci\source\repos\Wiskunde\Wiskunde\bin\Debug\netcoreapp3.1\Wiskunde.runtimeconfig.dev.json
+C:\Users\marci\source\repos\Wiskunde\Wiskunde\bin\Debug\netcoreapp3.1\Wiskunde.dll
+C:\Users\marci\source\repos\Wiskunde\Wiskunde\bin\Debug\netcoreapp3.1\Wiskunde.pdb
+C:\Users\marci\source\repos\Wiskunde\Wiskunde\obj\Debug\netcoreapp3.1\Wiskunde.csprojAssemblyReference.cache
+C:\Users\marci\source\repos\Wiskunde\Wiskunde\obj\Debug\netcoreapp3.1\Wiskunde.AssemblyInfoInputs.cache
+C:\Users\marci\source\repos\Wiskunde\Wiskunde\obj\Debug\netcoreapp3.1\Wiskunde.AssemblyInfo.cs
+C:\Users\marci\source\repos\Wiskunde\Wiskunde\obj\Debug\netcoreapp3.1\Wiskunde.csproj.CoreCompileInputs.cache
+C:\Users\marci\source\repos\Wiskunde\Wiskunde\obj\Debug\netcoreapp3.1\Wiskunde.dll
+C:\Users\marci\source\repos\Wiskunde\Wiskunde\obj\Debug\netcoreapp3.1\Wiskunde.pdb
+C:\Users\marci\source\repos\Wiskunde\Wiskunde\obj\Debug\netcoreapp3.1\Wiskunde.genruntimeconfig.cache
