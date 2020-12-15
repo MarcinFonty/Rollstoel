@@ -48,7 +48,7 @@ namespace SelecteerBestuurder
         {
             for (int i = 0; i < this.aantalRoutes; i++)
             {
-                this.cbSelecteerRoute.Items.Add("Oega boega");
+                this.cbSelecteerRoute.Items.Add("Test" + i);
             }
         }
 
