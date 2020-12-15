@@ -10,31 +10,31 @@ namespace SelecteerBestuurder
         /// </summary>
         /// <param name="buttonPress"></param>
         /// <param name="IP"></param>
-        public async void stuurSignaal(KeyEventArgs buttonPress, string IP)
+        public void stuurSignaal(KeyEventArgs buttonPress)
         {
-            using (var client = new HttpClient())
+            switch (buttonPress.KeyCode)
             {
-                var result = await client.GetAsync(IP);
-
-                switch (buttonPress.KeyCode)
-                {
-                    case Keys.W:
-                        result = await client.GetAsync(IP + "/WON");
-                        break;
-                    case Keys.A:
-                        result = await client.GetAsync(IP + "/AON");
-                        break;
-                    case Keys.D:
-                        result = await client.GetAsync(IP + "/DON");
-                        break;
-                    case Keys.S:
-                        result = await client.GetAsync(IP + "/SON");
-                        break;
-                    case Keys.Space:
-                        result = await client.GetAsync(IP + "/SBON");
-                        break;
-                }
+                case Keys.W:
+                    //SendUDP("W");
+                    break;
+                case Keys.A:
+                    //SendUDP("A");
+                    break;
+                case Keys.S:
+                    //SendUDP("S");
+                    break;
+                case Keys.D:
+                    //SendUDP("D");
+                    break;
+                case Keys.Space:
+                    //SendUDP(" ");
+                    break;
             }
+        }
+
+        public void stuurGeenSignaal(KeyEventArgs buttonRelease)
+        {
+            //SendUDP("P");
         }
 
         public void opslaanCoördinaten()

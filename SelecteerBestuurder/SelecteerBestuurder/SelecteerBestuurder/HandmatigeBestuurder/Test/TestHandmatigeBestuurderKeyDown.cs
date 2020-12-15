@@ -14,14 +14,13 @@ namespace SelecteerBestuurder
         /// </summary>
         /// <param name="buttonPress"></param>
         /// <param name="IP"></param>
-        public async void stuurSignaal(KeyEventArgs buttonPress, string IP)
+        public void stuurSignaal(KeyEventArgs buttonPress)
         {
             // Test lines without needed connection
             switch (buttonPress.KeyCode)
             {
                 case Keys.W:
                     MessageBox.Show("W aan");
-                    MessageBox.Show(IP);
                     break;
                 case Keys.A:
                     MessageBox.Show("A aan");
@@ -37,6 +36,12 @@ namespace SelecteerBestuurder
                     opslaanCoördinaten();
                     break;
             }
+        }
+
+        public void stuurGeenSignaal(KeyEventArgs buttonRelease)
+        {
+            // Test lines without needed connection
+            MessageBox.Show("P");
         }
 
         public void opslaanCoördinaten()

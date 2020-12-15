@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
-VisualStudioVersion = 16.0.30517.126
+VisualStudioVersion = 16.0.30804.86
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SelecteerBestuurder", "SelecteerBestuurder\SelecteerBestuurder.csproj", "{53CC06F4-22B7-4265-AD57-FA098E53EE48}"
 EndProject
@@ -20,6 +20,6 @@ Global
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
-		SolutionGuid = {ADC346F1-823E-43A1-91EF-271B10235510}
+		SolutionGuid = {B40862C5-D18B-4ACF-B223-498BB40639C5}
 	EndGlobalSection
 EndGlobal

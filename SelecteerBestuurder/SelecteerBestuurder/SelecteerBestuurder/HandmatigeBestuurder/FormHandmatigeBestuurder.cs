@@ -8,14 +8,18 @@ namespace SelecteerBestuurder
         // sets up the fields
         private bool IsKeyDown = false;
         private string IP;
+        private int POORT;
 
-        // creates new instance so i can get the ip
-        FormSelecteerBestuurder getIP = new FormSelecteerBestuurder();
+        // creates new instance
+        FormSelecteerBestuurder getIpAndPort = new FormSelecteerBestuurder();
+        HandmatigeBestuurderKeyDown keyDown = new HandmatigeBestuurderKeyDown();
+        TestHandmatigeBestuurderKeyDown testKeyDown = new TestHandmatigeBestuurderKeyDown();
 
         public FormHandmatigeBestuurder()
         {
             InitializeComponent();
-            this.IP = getIP.ip;
+            this.IP = getIpAndPort.ip;
+            this.POORT = getIpAndPort.poort;
         }   
 
         /// <summary>
@@ -23,11 +27,8 @@ namespace SelecteerBestuurder
         /// </summary>
         /// <param name="sender"></param>
         /// <param name="e"></param>
-        private async void HandmatigeBestuurder_KeyDown(object sender, KeyEventArgs e)
+        private void HandmatigeBestuurder_KeyDown(object sender, KeyEventArgs e)
         {
-            HandmatigeBestuurderKeyDown keyDown = new HandmatigeBestuurderKeyDown();
-            TestHandmatigeBestuurderKeyDown testKeyDown = new TestHandmatigeBestuurderKeyDown();
-
             if (IsKeyDown)
             {
                 return;
@@ -36,11 +37,11 @@ namespace SelecteerBestuurder
 
             if (cbRealCar.Checked)
             {
-                keyDown.stuurSignaal(e, IP);
+                keyDown.stuurSignaal(e);
             }
             else
             {
-                testKeyDown.stuurSignaal(e, IP);
+                testKeyDown.stuurSignaal(e);
             }
         }
 
@@ -49,20 +50,17 @@ namespace SelecteerBestuurder
         /// </summary>
         /// <param name="sender"></param>
         /// <param name="e"></param>
-        private async void HandmatigeBestuurder_KeyUp(object sender, KeyEventArgs e)
+        private void HandmatigeBestuurder_KeyUp(object sender, KeyEventArgs e)
         {
-            HandmatigeBestuurderKeyUp keyUp = new HandmatigeBestuurderKeyUp();
-            TestHandmatigeBestuurderKeyUp testKeyUp = new TestHandmatigeBestuurderKeyUp();
-           
             IsKeyDown = false;
 
             if (cbRealCar.Checked) 
             {
-                keyUp.stuurGeenSignaal(e, IP);
+                keyDown.stuurGeenSignaal(e);
             }
             else
             {
-                testKeyUp.stuurGeenSignaal(e, IP); 
+                testKeyDown.stuurGeenSignaal(e); 
             }
         }
 
