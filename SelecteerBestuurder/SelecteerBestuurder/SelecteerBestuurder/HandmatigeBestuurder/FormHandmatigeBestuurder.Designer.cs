@@ -35,6 +35,7 @@
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.btnTerug = new System.Windows.Forms.Button();
+            this.cbRealCar = new System.Windows.Forms.CheckBox();
             this.SuspendLayout();
             // 
             // label1
@@ -103,11 +104,22 @@
             this.btnTerug.KeyDown += new System.Windows.Forms.KeyEventHandler(this.HandmatigeBestuurder_KeyDown);
             this.btnTerug.KeyUp += new System.Windows.Forms.KeyEventHandler(this.HandmatigeBestuurder_KeyUp);
             // 
+            // cbRealCar
+            // 
+            this.cbRealCar.AutoSize = true;
+            this.cbRealCar.Location = new System.Drawing.Point(195, 107);
+            this.cbRealCar.Name = "cbRealCar";
+            this.cbRealCar.Size = new System.Drawing.Size(73, 17);
+            this.cbRealCar.TabIndex = 7;
+            this.cbRealCar.Text = "Real Car?";
+            this.cbRealCar.UseVisualStyleBackColor = true;
+            // 
             // FormHandmatigeBestuurder
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(280, 132);
+            this.Controls.Add(this.cbRealCar);
             this.Controls.Add(this.btnTerug);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.label5);
@@ -133,5 +145,6 @@
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Button btnTerug;
+        private System.Windows.Forms.CheckBox cbRealCar;
     }
 }
