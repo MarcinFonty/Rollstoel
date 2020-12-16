@@ -22,3 +22,15 @@ E:\GoogleDrive\School\Proftaak\Project 2\Code\Actuele code\C#\SelecteerBestuurde
 E:\GoogleDrive\School\Proftaak\Project 2\Code\Actuele code\C#\SelecteerBestuurder\SelecteerBestuurder\obj\Debug\SelecteerBestuurder.exe
 E:\GoogleDrive\School\Proftaak\Project 2\Code\Actuele code\C#\SelecteerBestuurder\SelecteerBestuurder\obj\Debug\SelecteerBestuurder.pdb
 E:\GoogleDrive\School\Proftaak\Project 2\Code\Actuele code\C#\SelecteerBestuurder\SelecteerBestuurder\obj\Debug\SelecteerBestuurder.FormSelecteerBestuurder.resources
+C:\Users\marci\Desktop\Hier\Rollstoel-main\Rollstoel-main\SelecteerBestuurder\SelecteerBestuurder\obj\Debug\SelecteerBestuurder.csprojAssemblyReference.cache
+C:\Users\marci\Desktop\Hier\Rollstoel-main\Rollstoel-main\SelecteerBestuurder\SelecteerBestuurder\obj\Debug\SelecteerBestuurder.FormAutonomeBestuurder.resources
+C:\Users\marci\Desktop\Hier\Rollstoel-main\Rollstoel-main\SelecteerBestuurder\SelecteerBestuurder\obj\Debug\SelecteerBestuurder.FormHandmatigeBestuurder.resources
+C:\Users\marci\Desktop\Hier\Rollstoel-main\Rollstoel-main\SelecteerBestuurder\SelecteerBestuurder\obj\Debug\SelecteerBestuurder.Properties.Resources.resources
+C:\Users\marci\Desktop\Hier\Rollstoel-main\Rollstoel-main\SelecteerBestuurder\SelecteerBestuurder\obj\Debug\SelecteerBestuurder.FormSelecteerBestuurder.resources
+C:\Users\marci\Desktop\Hier\Rollstoel-main\Rollstoel-main\SelecteerBestuurder\SelecteerBestuurder\obj\Debug\SelecteerBestuurder.csproj.GenerateResource.cache
+C:\Users\marci\Desktop\Hier\Rollstoel-main\Rollstoel-main\SelecteerBestuurder\SelecteerBestuurder\obj\Debug\SelecteerBestuurder.csproj.CoreCompileInputs.cache
+C:\Users\marci\Desktop\Hier\Rollstoel-main\Rollstoel-main\SelecteerBestuurder\SelecteerBestuurder\obj\Debug\SelecteerBestuurder.exe
+C:\Users\marci\Desktop\Hier\Rollstoel-main\Rollstoel-main\SelecteerBestuurder\SelecteerBestuurder\obj\Debug\SelecteerBestuurder.pdb
+C:\Users\marci\Desktop\Hier\Rollstoel-main\Rollstoel-main\SelecteerBestuurder\SelecteerBestuurder\bin\Debug\SelecteerBestuurder.exe.config
+C:\Users\marci\Desktop\Hier\Rollstoel-main\Rollstoel-main\SelecteerBestuurder\SelecteerBestuurder\bin\Debug\SelecteerBestuurder.exe
+C:\Users\marci\Desktop\Hier\Rollstoel-main\Rollstoel-main\SelecteerBestuurder\SelecteerBestuurder\bin\Debug\SelecteerBestuurder.pdb

@@ -5,14 +5,10 @@ namespace SelecteerBestuurder
 {
     public partial class FormSelecteerBestuurder : Form
     {
-        public string ip { get; private set; }
-        public int poort { get; private set; }
 
         public FormSelecteerBestuurder()
         {
             InitializeComponent();
-            this.ip = "http://192.168.43.49";
-            this.poort = 999;
         }
 
         /// <summary>
