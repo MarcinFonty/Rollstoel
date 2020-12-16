@@ -11,24 +11,53 @@ namespace UDP_Basics
         {
             string text = "D8266";
 
+            SendUDP(text);
+
+            while (true)
+            {
+                Listen();
+            }
+        }
+
+        static void SendUDP(string message)
+        {
             Socket s = new Socket(AddressFamily.InterNetwork, SocketType.Dgram, ProtocolType.Udp);
 
             IPAddress broadcast = IPAddress.Parse("192.168.43.49");
 
-            byte [] sendbuf = Encoding.ASCII.GetBytes(text);
+            byte[] sendbuf = Encoding.ASCII.GetBytes(message);
             IPEndPoint ep = new IPEndPoint(broadcast, 999);
 
             s.SendTo(sendbuf, ep);
 
             Console.WriteLine("Message sent to the broadcast address");
-
-            stringMethode(text);
         }
 
-        static void stringMethode(string message)
+        static void Listen()
         {
-            Console.WriteLine(message.Substring(0, 1));
-            Console.WriteLine(message.Substring(1));
+            const int listenPort = 1001;
+            UdpClient listener = new UdpClient(listenPort);
+            IPEndPoint groupEP = new IPEndPoint(IPAddress.Any, listenPort);
+
+            try
+            {
+                while (true)
+                {
+                    Console.WriteLine("Waiting for broadcast");
+                    byte[] bytes = listener.Receive(ref groupEP);
+
+                    Console.WriteLine($"Received broadcast from {groupEP} :");
+                    Console.WriteLine($" {Encoding.ASCII.GetString(bytes, 0, bytes.Length)}");
+                }
+            }
+            catch (SocketException e)
+            {
+                Console.WriteLine(e);
+            }
+            finally
+            {
+                listener.Close();
+            }
         }
     }
 }
