@@ -7,19 +7,15 @@ namespace SelecteerBestuurder
     {
         // sets up the fields
         private bool IsKeyDown = false;
-        private string IP;
-        private int POORT;
 
         // creates new instance
-        FormSelecteerBestuurder getIpAndPort = new FormSelecteerBestuurder();
+ 
         HandmatigeBestuurderKeyDown keyDown = new HandmatigeBestuurderKeyDown();
         TestHandmatigeBestuurderKeyDown testKeyDown = new TestHandmatigeBestuurderKeyDown();
 
         public FormHandmatigeBestuurder()
         {
             InitializeComponent();
-            this.IP = getIpAndPort.ip;
-            this.POORT = getIpAndPort.poort;
         }   
 
         /// <summary>
@@ -37,11 +33,11 @@ namespace SelecteerBestuurder
 
             if (cbRealCar.Checked)
             {
-                keyDown.stuurSignaal(e);
+                testKeyDown.stuurSignaal(e);
             }
             else
             {
-                testKeyDown.stuurSignaal(e);
+                keyDown.stuurSignaal(e);
             }
         }
 
@@ -56,11 +52,11 @@ namespace SelecteerBestuurder
 
             if (cbRealCar.Checked) 
             {
-                keyDown.stuurGeenSignaal(e);
+                testKeyDown.stuurGeenSignaal(e);
             }
             else
             {
-                testKeyDown.stuurGeenSignaal(e); 
+                keyDown.stuurGeenSignaal(e);
             }
         }
 

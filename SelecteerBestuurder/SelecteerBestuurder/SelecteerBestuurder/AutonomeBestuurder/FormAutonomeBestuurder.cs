@@ -6,17 +6,12 @@ namespace SelecteerBestuurder
     public partial class FormAutonomeBestuurder : Form
     {
         // sets up the fields
-        private int aantalRoutes = 5;
-        private string IP;
-        
-        // Creates new instance of the main form so i can use get to transport the IP
-        FormSelecteerBestuurder getIP = new FormSelecteerBestuurder();
+        private int aantalRoutes = 1;
 
         public FormAutonomeBestuurder()
         {
             InitializeComponent();
             addToComboBox();
-            this.IP = getIP.ip;
         }
 
         /// <summary>
@@ -46,10 +41,8 @@ namespace SelecteerBestuurder
         /// </summary>
         private void addToComboBox()
         {
-            for (int i = 0; i < this.aantalRoutes; i++)
-            {
-                this.cbSelecteerRoute.Items.Add("Test" + i);
-            }
+            // for loop voor de hoeveelheid roetes
+                this.cbSelecteerRoute.Items.Add("Test route");
         }
 
         /// <summary>
@@ -57,12 +50,15 @@ namespace SelecteerBestuurder
         /// </summary>
         private void selectRoute()
         {
-            int selectedIndex = cbSelecteerRoute.SelectedIndex;
+            //int selectedIndex = cbSelecteerRoute.SelectedIndex;
             Object selectedItem = cbSelecteerRoute.SelectedItem;
 
             MessageBox.Show(selectedItem.ToString());
-            MessageBox.Show(selectedIndex.ToString());
-            MessageBox.Show(IP);
+            //MessageBox.Show(selectedIndex.ToString());
+
+            AutonomeBestuurder Jerry = new AutonomeBestuurder();
+            Jerry.RouteRijden();
+
         }
     }
 }
