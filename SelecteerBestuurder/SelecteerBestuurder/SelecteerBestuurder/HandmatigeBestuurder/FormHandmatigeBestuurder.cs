@@ -9,9 +9,7 @@ namespace SelecteerBestuurder
         private bool IsKeyDown = false;
 
         // creates new instance
- 
         HandmatigeBestuurderKeyDown keyDown = new HandmatigeBestuurderKeyDown();
-        TestHandmatigeBestuurderKeyDown testKeyDown = new TestHandmatigeBestuurderKeyDown();
 
         public FormHandmatigeBestuurder()
         {
@@ -31,13 +29,13 @@ namespace SelecteerBestuurder
             }
             IsKeyDown = true;
 
-            if (cbRealCar.Checked)
+            if (cbTestCar.Checked)
             {
-                testKeyDown.stuurSignaal(e);
+                laadTestForm();
             }
             else
             {
-                keyDown.stuurSignaal(e);
+                keyDown.rijdenAuto(e);
             }
         }
 
@@ -50,13 +48,13 @@ namespace SelecteerBestuurder
         {
             IsKeyDown = false;
 
-            if (cbRealCar.Checked) 
+            if (cbTestCar.Checked) 
             {
-                testKeyDown.stuurGeenSignaal(e);
+                laadTestForm();
             }
             else
             {
-                keyDown.stuurGeenSignaal(e);
+                keyDown.stopAuto(e);
             }
         }
 
@@ -68,6 +66,16 @@ namespace SelecteerBestuurder
         private void btnTerug_Click(object sender, EventArgs e)
         {
             FormSelecteerBestuurder form = new FormSelecteerBestuurder();
+            form.Show();
+            this.Hide();
+        }
+
+        /// <summary>
+        /// Laad nieuwe form in voor testauto
+        /// </summary>
+        private void laadTestForm()
+        {
+            FormTestCar form = new FormTestCar();
             form.Show();
             this.Hide();
         }
