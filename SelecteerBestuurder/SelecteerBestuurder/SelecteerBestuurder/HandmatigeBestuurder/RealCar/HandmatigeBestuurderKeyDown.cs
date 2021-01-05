@@ -14,7 +14,7 @@ namespace SelecteerBestuurder
         /// </summary>
         /// <param name="buttonPress"></param>
         /// <param name="IP"></param>
-        public void stuurSignaal(KeyEventArgs buttonPress)
+        public void rijdenAuto(KeyEventArgs buttonPress)
         {
             switch (buttonPress.KeyCode)
             {
@@ -39,7 +39,7 @@ namespace SelecteerBestuurder
             }
         }
 
-        public void stuurGeenSignaal(KeyEventArgs buttonRelease)
+        public void stopAuto(KeyEventArgs buttonRelease)
         {
             UDP.SendUDP("B");
         }

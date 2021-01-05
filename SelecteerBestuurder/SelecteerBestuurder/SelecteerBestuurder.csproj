@@ -69,7 +69,13 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="SelecteerBestuurder\HandmatigeBestuurder\Test\TestHandmatigeBestuurderKeyDown.cs" />
+    <Compile Include="SelecteerBestuurder\HandmatigeBestuurder\TestCar\FormTestCar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SelecteerBestuurder\HandmatigeBestuurder\TestCar\FormTestCar.Designer.cs">
+      <DependentUpon>FormTestCar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SelecteerBestuurder\HandmatigeBestuurder\TestCar\TestHandmatigeBestuurderKeyDown.cs" />
     <Compile Include="TCords.cs" />
     <Compile Include="UDP\UDP.cs" />
     <EmbeddedResource Include="SelecteerBestuurder\AutonomeBestuurder\FormAutonomeBestuurder.resx">
@@ -89,6 +95,9 @@
     </Compile>
     <EmbeddedResource Include="SelecteerBestuurder\FormSelecteerBestuurder.resx">
       <DependentUpon>FormSelecteerBestuurder.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SelecteerBestuurder\HandmatigeBestuurder\TestCar\FormTestCar.resx">
+      <DependentUpon>FormTestCar.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
